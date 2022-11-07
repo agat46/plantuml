@@ -133,7 +133,7 @@ skinparam stereotype {
     NBorderColor $INFO_DARK
 }
 skinparam header {
-	HorizontalAlignment 		 right
+	HorizontalAlignment 		 center
 	FontColor	                 $PRIMARY
 	FontSize	    	         12
 	Padding	    	         	 10
@@ -203,43 +203,43 @@ skinparam arrow {
 
 !startsub sequence
 skinparam sequence {
-	ArrowThickness 3
-	BorderColor $PRIMARY
+	ArrowThickness 1
+	BorderColor $GRAY7
 	' For some reason sequence title font color does not pick up from global
 	TitleFontColor $PRIMARY
-	BackgroundColor $BGCOLOR
+	BackgroundColor $WHITE
 	StartColor $PRIMARY
 	EndColor $PRIMARY
 	''
 	BoxBackgroundColor $BGCOLOR
-	BoxBorderColor $DARK
-	BoxFontColor $DARK
+	BoxBorderColor $GRAY10
+	BoxFontColor $GRAY10
 	''
-	DelayFontColor $DARK
+	DelayFontColor $GRAY10
 	''
-	LifeLineBorderColor $LIGHT
-	LifeLineBorderThickness 3
-	LifeLineBackgroundColor $LIGHT
+	LifeLineBorderColor $GRAY3
+	LifeLineBorderThickness 1
+	LifeLineBackgroundColor $GRAY3
 	''
-	GroupBorderColor $DARK
-	GroupFontColor $DARK
-	GroupHeaderFontColor $INFO
-	GroupBackgroundColor $SECONDARY
-	GroupBodyBackgroundColor $BGCOLOR
+	GroupBorderColor $GRAY10
+	GroupFontColor $GRAY10
+	GroupHeaderFontColor $FUNCTIONAL1
+	GroupBackgroundColor $FUNCTIONAL2
+	GroupBodyBackgroundColor $BRIGHT1
 	GroupHeaderBackgroundColor $BGCOLOR
 	''
-	DividerBackgroundColor $DARK
-    DividerBorderColor $DARK
+	DividerBackgroundColor $GRAY10
+    DividerBorderColor $GRAY10
     DividerBorderThickness 2
-    DividerFontColor $LIGHT
+    DividerFontColor $TEAL1
 	''
 	ReferenceBackgroundColor $BGCOLOR
-	ReferenceBorderColor $DARK
-	ReferenceFontColor $DARK
-	ReferenceHeaderFontColor $INFO
-	ReferenceHeaderBackgroundColor $SECONDARY
+	ReferenceBorderColor $GRAY10
+	ReferenceFontColor $GRAY10
+	ReferenceHeaderFontColor $FUNCTIONAL13
+	ReferenceHeaderBackgroundColor $FUNCTIONAL1
 	''
-	StereotypeFontColor $PRIMARY_TEXT
+	StereotypeFontColor $BLACK
 }
 !endsub
 
