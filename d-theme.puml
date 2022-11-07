@@ -156,12 +156,14 @@ skinparam legend {
 
 !startsub swimlane
 skinparam swimlane {
-	BorderColor $INFO
-	BorderThickness 2
-	TitleBackgroundColor  $SECONDARY_DARK-$SECONDARY
-	TitleFontColor $PRIMARY
+	BorderColor $TEAL1
+	BorderThickness 1
+	TitleBackgroundColor  $WHITE
+	TitleFontColor $BLACK
 }
+'' color to use as background in every second field: #DDEFE8 (in theme definied as $TEAL1)
 !endsub
+
 
 !startsub activity
 skinparam activity {
