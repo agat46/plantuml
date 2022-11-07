@@ -181,7 +181,8 @@ skinparam activity {
 !startsub participant
 skinparam participant {
 	$primary_scheme()
-	ParticipantBorderThickness 2
+	BorderColor $GRAY7
+	BorderThickness 0.5
 }
 !endsub
 
