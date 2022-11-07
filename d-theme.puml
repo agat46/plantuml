@@ -1,11 +1,10 @@
 ''
-'' superhero theme based off of the bootstrap theme of the same name
-'' https://bootswatch.com/superhero/
+'' Custom Deloitte theme white for internal use
 ''
-'' Author: Brett Schwarz
-'' Copyright (c) 2019 by Brett Schwarz
+'' Author: Agata Czarnecka
+'' Copyright (c) 2022 by Agata Czarnecka
 
-!$THEME = "AWS Orange Dark"
+!$THEME = "Deloitte custom white"
 
 !if %not(%variable_exists("$BGCOLOR"))
 !$BGCOLOR = "transparent"
@@ -17,8 +16,8 @@ skinparam useBetaStyle false
 !$WHITE = "#FFF"
 !$GRAY_LIGHT = "#222"
 !$GRAY = "#868e96"
-!$PRIMARY = "#EC7211"
-!$SECONDARY = "#2a2e33"
+!$PRIMARY = "#86BC25"
+!$SECONDARY = "#E3E48D"
 !$SUCCESS = "#6aaf35"
 !$INFO = "#44b9d6"
 '!$WARNING = "#879596"
@@ -105,7 +104,7 @@ skinparam useBetaStyle false
 ''
 '' Global Default Values
 ''
-skinparam defaultFontName       "Verdana"
+skinparam defaultFontName       "Open Sans"
 skinparam defaultFontSize       12
 skinparam dpi                   100
 skinparam shadowing             false
