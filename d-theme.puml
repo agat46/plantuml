@@ -126,7 +126,8 @@ skinparam stereotype {
     NBorderColor $INFO_DARK
 }
 skinparam header {
-	FontColor	                 $PRIMARY_TEXT
+	HorizontalAlignment 		 right
+	FontColor	                 $PRIMARY
 	FontSize	    	         14
 	Padding	    	         	 10
 }
