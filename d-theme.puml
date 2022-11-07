@@ -135,7 +135,7 @@ skinparam stereotype {
 skinparam header {
 	HorizontalAlignment 		 right
 	FontColor	                 $PRIMARY
-	FontSize	    	         14
+	FontSize	    	         13
 	Padding	    	         	 10
 	FontStyle 			 bold
 }
@@ -469,3 +469,6 @@ skinparam stack {
 ' 	}
 ' }
 ' </style>
+
+''header hardcoded
+header Business Core Operations <img:https://raw.githubusercontent.com/agat46/plantuml/main/graphics/deloitte-no-borders.jpg{scale=0.1}>
