@@ -167,13 +167,13 @@ skinparam swimlane {
 !startsub activity
 skinparam activity {
 	$primary_scheme()
-	BarColor $GREEN6
-	StartColor $BLUE2
-	EndColor $BLUE24
+	BarColor $GREEN_ACCESSIBLE
+	StartColor $GREEN_ACCESSIBLE
+	EndColor $GREEN_ACCESSIBLE
 	''
-	DiamondBackgroundColor $BLUE5
-  	DiamondBorderColor $BLUE5
-  	DiamondFontColor $WHITE
+	DiamondBackgroundColor $TEAL1
+  	DiamondBorderColor $TEAL1
+  	DiamondFontColor $BLACK
 	DiamondFontSize 12
 }
 !endsub
