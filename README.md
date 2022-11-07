@@ -30,11 +30,15 @@ skinparam linetype ortho
 
 ## Examples of diagrams
 - Component diagram <br />
-< in progress >
+< in progress ><br />
 
 - Deployment Architecture <br />
-< in progress >
+< in progress ><br />
 
 
 - Data Model <br />
-< in progress >
+< in progress ><br />
+
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/Picture1.png)
+<br />
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/graphics/examples/Picture2.png)
