@@ -135,7 +135,7 @@ skinparam stereotype {
 skinparam header {
 	HorizontalAlignment 		 right
 	FontColor	                 $PRIMARY
-	FontSize	    	         13
+	FontSize	    	         12
 	Padding	    	         	 10
 	FontStyle 			 bold
 }
@@ -154,6 +154,7 @@ skinparam legend {
 	FontColor $LIGHT
 }
 
+'' color to use as background in every second field: #DDEFE8 (in theme definied as $TEAL1)
 !startsub swimlane
 skinparam swimlane {
 	BorderColor $TEAL1
@@ -161,20 +162,19 @@ skinparam swimlane {
 	TitleBackgroundColor  $WHITE
 	TitleFontColor $GRAY10
 }
-'' color to use as background in every second field: #DDEFE8 (in theme definied as $TEAL1)
 !endsub
-
 
 !startsub activity
 skinparam activity {
 	$primary_scheme()
-	BarColor $SUCCESS
-	StartColor $INFO
-	EndColor $INFO
+	BarColor $GREEN6
+	StartColor $BLUE2
+	EndColor $BLUE24
 	''
-	DiamondBackgroundColor $SECONDARY_LIGHT
-  	DiamondBorderColor $SECONDARY_DARK
-  	DiamondFontColor $SECONDARY_TEXT
+	DiamondBackgroundColor $BLUE5
+  	DiamondBorderColor $BLUE5
+  	DiamondFontColor $WHITE
+	DiamondFontSize 12
 }
 !endsub
 
@@ -469,6 +469,3 @@ skinparam stack {
 ' 	}
 ' }
 ' </style>
-
-''header hardcoded
-header Business Core Operations <img:https://raw.githubusercontent.com/agat46/plantuml/main/graphics/deloitte-no-borders.jpg{scale=0.1}>
