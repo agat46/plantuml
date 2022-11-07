@@ -2,7 +2,6 @@
 '' Custom Deloitte theme white for internal use
 ''
 '' Author: Agata Czarnecka
-'' Copyright (c) 2022 by Agata Czarnecka
 
 !$THEME = "Deloitte custom white"
 
@@ -13,64 +12,72 @@
 skinparam backgroundColor $BGCOLOR
 skinparam useBetaStyle false
 
-!$WHITE = "#FFF"
-!$GRAY_LIGHT = "#222"
-!$GRAY = "#868e96"
+''primary patelle
+!$WHITE = "#ffffff"
+!$BLACK = "#000000"
 !$PRIMARY = "#86BC25"
-!$SECONDARY = "#E3E48D"
-!$SUCCESS = "#6aaf35"
-!$INFO = "#44b9d6"
-'!$WARNING = "#879596"
-!$WARNING = "#EC7211"
-!$DANGER = "#ff5d64"
-!$LIGHT = "#abb6c2"
-!$DARK = "#4E5D6C"
+!$GREEN4 = "#43B02A"
+!$GREEN_ACCESSIBLE = "#26890D"
+!$GREEN6 = "#046A38"
+!$TEAL_ACCESSIBLE = "#0D8390"
+!$BLUE_ACCESSIBLE = "#007CB0"
 
-'' *_DARK = tint (lighter) of the main color of 80%
-''          where TINT is calculated by clr + (255-clr) * tint_factor
-'' *_LIGHT = shade (darker) of the main color of 80%
-''          and SHADE is calculated by clr * (1 - shade_factor)
-''
-!$FGCOLOR = $WHITE
-!$PRIMARY_DARK = "#f08e41"
-!$PRIMARY_LIGHT = "#bd5b0e"
-!$PRIMARY_TEXT = $WHITE
-!$SECONDARY_DARK = "#55585c"
-!$SECONDARY_LIGHT = "#222529"
-!$SECONDARY_TEXT = $WHITE
-!$INFO_DARK = "#69c7de"
-!$INFO_LIGHT = "#3694ab"
-!$INFO_TEXT = $WHITE
-!$SUCCESS_DARK = "#88bf5d"
-!$SUCCESS_LIGHT = "#558c2a"
-!$SUCCESS_TEXT = $WHITE
-!$WARNING_DARK = "#f08e41"
-!$WARNING_LIGHT = "#bd5b0e"
-!$WARNING_TEXT = $WHITE
-!$DANGER_DARK = "#ff7d83"
-!$DANGER_LIGHT = "#cc4a50"
-!$DANGER_TEXT = $WHITE
-!$DARK_DARK = "#717d89"
-!$DARK_LIGHT = "#3e4a56"
-!$LIGHT_DARK = "#bcc5ce"
-!$LIGHT_LIGHT = "#89929b"
+''secondary patelle
+!$GREEN1 = "#E3E48D"
+!$GREEN2 = "#C4D600"
+!$GREEN5 = "#009A44"
+!$GREEN7 = "#2C5234"
+!$BLUE1 = "#A0DCFF"
+!$BLUE2 = "#62B5E5"
+!$BLUE3 = "#00A3E0"
+!$BLUE4 = "#0076A8"
+!$BLUE5 = "#005587"
+!$BLUE6 = "#012169"
+!$BLUE7 = "#041E42"
+!$TEAL1 = "#DDEFE8"
+!$TEAL2 = "#9DD4CF"
+!$TEAL3 = "#6FC2B4"
+!$TEAL4 = "#00ABAB"
+!$TEAL5 = "#0097A9"
+!$TEAL6 = "#007680"
+!$TEAL7 = "#004F59"
+
+''gray patelle
+!$GRAY2 = "#D0D0CE"
+!$GRAY4 = "#BBBCBC"
+!$GRAY6 = "#A7A8AA"
+!$GRAY7 = "#97999B"
+!$GRAY9 = "#75787B"
+!$GRAY10 = "#63666A"
+!$GRAY11 = "#53565A"
+
+''limited bright patelle
+!$BRIGHT1 = "#0df200"
+!$BRIGHT2 = "#3efac5"
+!$BRIGHT3 = "#33f0ff"
+
+''limited functional patelle
+!$FUNCTIONAL1 = "#DA291C"
+!$FUNCTIONAL2 = "#ED8B00"
+!$FUNCTIONAL3 = "#FFCD00"
+
 
 !procedure $success($msg)
-  <font color=$SUCCESS><b>$msg
+  <font color=$BRIGHT1><b>$msg
 !endprocedure
 
 !procedure $failure($msg)
-  <font color=$DANGER><b>$msg
+  <font color=$FUNCTIONAL1><b>$msg
 !endprocedure
 
 !procedure $warning($msg)
-  <font color=$WARNING><b>$msg
+  <font color=$FUNCTIONAL2><b>$msg
 !endprocedure
 
 !procedure $primary_scheme()
-	FontColor $PRIMARY_TEXT
-	BorderColor $PRIMARY
-	BackgroundColor $PRIMARY_DARK-$PRIMARY
+	FontColor $BLACK
+	BorderColor $BLACK
+	BackgroundColor $WHITE
 !endprocedure
 
 !_POST = "<color #007a3e>POST</color>"
@@ -82,13 +89,13 @@ skinparam useBetaStyle false
 
 ' for status codes
 !procedure $OK($x)
-  <color green>$x</color>
+  <color $BRIGHT1>$x</color>
 !endprocedure
 !procedure $ERROR($x)
-  <color red>$x</color>
+  <color $FUNCTIONAL1>$x</color>
 !endprocedure
 !procedure $COND($x)
-  <color orange>x</color>
+  <color $FUNCTIONAL2>x</color>
 !endprocedure
 
 ' For marking parameters as optionally or required
