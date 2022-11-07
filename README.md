@@ -17,6 +17,7 @@ To invoke a local theme, you have to use the following directive:
 
 ## Tips
 - every diagram contains the header, caption and footer like below:
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/graphics/example.png)
 
 
 
