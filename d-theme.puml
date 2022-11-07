@@ -277,9 +277,10 @@ skinparam boundary {
 
 !startsub agent
 skinparam agent {
-	BackgroundColor $WARNING
-	BorderColor $WARNING_LIGHT
-	FontColor $DARK
+	BackgroundColor $WHITE
+	BorderColor $GREEN4
+	FontColor $GREEN4
+	FontStyle bold
 }
 !endsub
 
@@ -294,9 +295,10 @@ skinparam note {
 
 !startsub artifact
 skinparam artifact {
-	BackgroundColor $DARK
-	BorderColor $DARK_DARK
-	FontColor $LIGHT
+	BackgroundColor $WHITE
+	BorderColor $GREEN4
+	FontColor $GREEN4
+	FontStyle bold
 }
 !endsub
 
@@ -308,33 +310,29 @@ skinparam component {
 
 !startsub interface
 skinparam interface {
-	BackgroundColor  $DANGER_DARK
-	BorderColor  $DANGER
-	FontColor $DARK
+	BackgroundColor  $PRIMARY
+	BorderColor  $PRIMARY
+	FontColor $BLACK
 }
 !endsub
 
 !startsub storage
 skinparam storage {
-	BackgroundColor $WARNING
-  	BorderColor $WARNING_DARK
-	FontColor $WARNING_TEXT
+	$primary_scheme()
 }
 !endsub
 
 !startsub node
 skinparam node {
-	BackgroundColor $BGCOLOR
-	BorderColor $LIGHT
-	FontColor $LIGHT
+	$primary_scheme()
 }
 !endsub
 
 !startsub cloud
 skinparam cloud {
-	BackgroundColor transparent
-	BorderColor $DARK
-	FontColor $LIGHT
+	BackgroundColor #WHITE
+	BorderColor $GRAY10
+	FontColor $BLACK
 }
 !endsub
 
@@ -375,38 +373,38 @@ skinparam usecase {
 
 !startsub rectangle
 skinparam rectangle {
-	BorderColor $DARK
-	FontColor $LIGHT
+	BorderColor $PRIMARY
+	FontColor $BLACK
 	BackgroundColor $BGCOLOR
-	BorderThickness 2
-	StereotypeFontColor $DARK
+	BorderThickness 1
+	StereotypeFontColor $GRAY7
+}
+!endsub
+
+!startsub circle
+skinparam circle {
+	$primary_scheme()
 }
 !endsub
 
 !startsub package
 skinparam package {
-	BackgroundColor $SECONDARY
-  	BorderColor $LIGHT
-	FontColor $LIGHT
-	BorderThickness 2
+	BackgroundColor $GRAY1
+  	BorderColor $PRIMARY
+	FontColor $BLACK
+	BorderThickness 1
 }
 !endsub
 
 !startsub folder
 skinparam folder {
-	BackgroundColor $SECONDARY_LIGHT
-  	BorderColor $WARNING
-	FontColor $WARNING
-	BorderThickness 2
+	$primary_scheme()
 }
 !endsub
 
 !startsub frame
 skinparam frame {
-	BackgroundColor $SECONDARY_LIGHT
-  	BorderColor $INFO
-	FontColor $INFO
-	BorderThickness 2
+	$primary_scheme()
 }
 !endsub
 
@@ -428,17 +426,16 @@ skinparam queue {
 
 !startsub card
 skinparam card {
-	BackgroundColor $INFO
-	BorderColor $INFO_DARK
-	FontColor $INFO_TEXT
+	BackgroundColor $WHITE
+	BorderColor $GREEN4
+	FontColor $GREEN4
+	FontStyle bold
 }
 !endsub
 
 !startsub file
 skinparam file {
-	BackgroundColor $SECONDARY_DARK
-	BorderColor $LIGHT
-	FontColor $PRIMARY_TEXT
+	$primary_scheme()
 }
 !endsub
 
