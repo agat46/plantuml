@@ -143,7 +143,7 @@ skinparam title {
 	HorizontalAlignment 		 center
 	FontColor	                 $BLACK
 	BorderColor	                 $GRAY7
-	FontSize	    	         18
+	FontSize	    	         16
 	BorderRoundCorner            	 8
 	BorderThickness 	         0.5
 	BackgroundColor             	 $WHITE
