@@ -16,6 +16,8 @@ To invoke a local theme, you have to use the following directive:
 ```
 
 ## Tips
+- links to generate diagrams online (draw.io doesn't contain build-in font Open Sans!)<br />
+https://www.planttext.com/<br />http://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000<br />
 - every diagram contains the header, caption and footer like below:<br /><br />
 ![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/graphics/example.png)
 
