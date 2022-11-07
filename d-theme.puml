@@ -130,6 +130,7 @@ skinparam header {
 	FontColor	                 $PRIMARY
 	FontSize	    	         14
 	Padding	    	         	 10
+	FontStyle 			 bold
 }
 skinparam title {
 	FontColor	                 $PRIMARY_TEXT
