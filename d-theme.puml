@@ -488,6 +488,6 @@ skinparam footer {
 ' 	}
 ' }
 ' </style>
-header Cloud & Engineering Team | Cloud Integration <img:https://raw.githubusercontent.com/agat46/plantuml/main/graphics/deloitte-no-borders.jpg{scale=0.1}>
+header Cloud & Engineering Team | Cloud Integration
 caption Prepared by <img:https://raw.githubusercontent.com/agat46/plantuml/main/graphics/logo-Deloitte.png{scale=0.3}>
 footer All rights reserved
