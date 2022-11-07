@@ -194,9 +194,10 @@ skinparam actor {
 
 !startsub arrow
 skinparam arrow {
-	Thickness 3
-	Color $PRIMARY
-	FontColor $FGCOLOR
+	Thickness 0.5
+	Color $GREEN4
+	FontColor $GRAY10
+	FontSize 12
 }
 !endsub
 
@@ -452,7 +453,7 @@ skinparam caption {
 	$primary_scheme()
 	HorizontalAlignment center
   	FontSize 14
-  	Padding 10
+  	Padding 15
 }
 !endsub
 
