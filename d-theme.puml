@@ -112,13 +112,13 @@ skinparam useBetaStyle false
 '' Global Default Values
 ''
 skinparam defaultFontName       "Open Sans"
-skinparam defaultFontSize       12
+skinparam defaultFontSize       11
 skinparam dpi                   100
 skinparam shadowing             false
 skinparam roundcorner           8
 skinparam ParticipantPadding    40
 skinparam BoxPadding            40
-skinparam Padding               5
+skinparam Padding               3
 skinparam ArrowColor            $GRAY9
 skinparam stereotype {
     CBackgroundColor $SECONDARY_LIGHT
