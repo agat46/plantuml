@@ -41,4 +41,4 @@ skinparam linetype ortho
 
 ![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/Picture1.png)
 <br />
-![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/graphics/examples/Picture2.png)
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/Picture2.png)
