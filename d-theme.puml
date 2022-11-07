@@ -447,6 +447,23 @@ skinparam stack {
 }
 !endsub
 
+!startsub caption
+skinparam caption {
+	$primary_scheme()
+	HorizontalAlignment center
+  	FontSize 14
+  	Padding 10
+}
+!endsub
+
+!startsub footer
+skinparam footer {
+	HorizontalAlignment center
+  	FontSize 9
+	FontColor $GRAY10
+}
+!endsub
+
 
 ' <style> 
 ' mindmapDiagram {
@@ -470,3 +487,6 @@ skinparam stack {
 ' 	}
 ' }
 ' </style>
+header Cloud & Engineering Team | Cloud Integration <img:https://raw.githubusercontent.com/agat46/plantuml/main/graphics/deloitte-no-borders.jpg{scale=0.1}>
+caption Prepared by <img:https://raw.githubusercontent.com/agat46/plantuml/main/graphics/logo-Deloitte.png{scale=0.3}>
+footer All rights reserved
