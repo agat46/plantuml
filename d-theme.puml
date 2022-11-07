@@ -159,7 +159,7 @@ skinparam swimlane {
 	BorderColor $TEAL1
 	BorderThickness 1
 	TitleBackgroundColor  $WHITE
-	TitleFontColor $BLACK
+	TitleFontColor $GRAY10
 }
 '' color to use as background in every second field: #DDEFE8 (in theme definied as $TEAL1)
 !endsub
