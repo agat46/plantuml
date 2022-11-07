@@ -119,7 +119,7 @@ skinparam roundcorner           8
 skinparam ParticipantPadding    40
 skinparam BoxPadding            40
 skinparam Padding               5
-skinparam ArrowColor            $DARK
+skinparam ArrowColor            $GRAY9
 skinparam stereotype {
     CBackgroundColor $SECONDARY_LIGHT
     CBorderColor $SECONDARY_DARK
@@ -140,14 +140,14 @@ skinparam header {
 	FontStyle 			 bold
 }
 skinparam title {
-	FontColor	                 $PRIMARY_TEXT
-	BorderColor	                 $SECONDARY
-	FontSize	    	         20
-	BorderRoundCorner            8
-	BorderThickness 	         1
-	BackgroundColor              $SECONDARY_DARK-$SECONDARY
+	HorizontalAlignment 		 center
+	FontColor	                 $BLACK
+	BorderColor	                 $GRAY7
+	FontSize	    	         18
+	BorderRoundCorner            	 8
+	BorderThickness 	         0.5
+	BackgroundColor             	 $WHITE
 }
-
 skinparam legend {
 	BackgroundColor $SECONDARY
 	BorderColor $SECONDARY_DARK
