@@ -14,6 +14,13 @@ To invoke a local theme, you have to use the following directive:
 ```
 !include https://raw.githubusercontent.com/agat46/plantuml/main/d-theme.puml
 ```
+
+## Tips
+- every diagram contains the header, caption and footer like below:
+
+
+
+
 ## Examples of diagrams
 - Component diagram <br />
 < in progress >
