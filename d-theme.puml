@@ -125,6 +125,11 @@ skinparam stereotype {
     NBackgroundColor $INFO_LIGHT
     NBorderColor $INFO_DARK
 }
+skinparam header {
+	FontColor	                 $PRIMARY_TEXT
+	FontSize	    	         14
+	Padding	    	         	 10
+}
 skinparam title {
 	FontColor	                 $PRIMARY_TEXT
 	BorderColor	                 $SECONDARY
