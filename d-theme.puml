@@ -445,6 +445,15 @@ skinparam stack {
 }
 !endsub
 
+!startsub class
+skinparam class {
+FontSize 12
+ArrowColor #GRAY7
+BorderColor #GRAY11
+FontColor #BLACK
+}
+!endsub
+
 !startsub caption
 skinparam caption {
 	$primary_scheme()
