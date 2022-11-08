@@ -3,8 +3,7 @@
 ## How to use theme
 There are a few ways you can use these themes:
 
-1. You can clone this repo, or you could download the theme file from the repo.
-By default, a theme file is named foo.puml where foo is the name of the theme.
+1. You can clone this repo, or you could download the theme file from the repo. Remeber about the same structure in the files.
 To invoke a local theme, you have to use the following directive:
 ```
 !theme d-white from /themes
@@ -16,16 +15,16 @@ To invoke a local theme, you have to use the following directive:
 ```
 
 ## Tips
-- links to generate diagrams online (draw.io doesn't contain build-in font Open Sans!)<br />
+- links to generate diagrams online <br />
 https://www.planttext.com/<br />http://www.plantuml.com/plantuml/uml<br /><br />
-- for better readability it's worth to chane line type:<br />
+- sometimes for better readability it's worth to chagne line type by command:<br />
 ```
 skinparam linetype ortho
 ```
 - every diagram contains the header, caption and footer like below:<br /><br />
-![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/graphics/example.png)
-
-
+______________________________________________________
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/graphics/example.png)<br />
+______________________________________________________
 
 
 ## Examples of diagrams
