@@ -344,9 +344,9 @@ skinparam database {
 !startsub class
 skinparam class {
 	$primary_scheme()
-	HeaderBackgroundColor $BLACK
+	HeaderBackgroundColor $WHITE
 	StereotypeFontColor $BLACK
-	BorderThickness 1
+	BorderThickness 0.5
 	AttributeFontColor $BLACK
 	AttributeFontSize 11
 }
