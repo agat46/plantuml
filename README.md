@@ -29,8 +29,8 @@ skinparam linetype ortho
 
 
 ## Examples of diagrams
-- Conditional - Activity Diagram <br />
-![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/Picture1.png) <br />
+- Conditional - Activity Diagram <br /><br />
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/1-conditional.png) <br />
 
 - Component diagram <br />
 < in progress ><br />
@@ -43,4 +43,4 @@ skinparam linetype ortho
 < in progress ><br />
 
 <br />
-![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/Picture2.png)
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/Picture2.png) <br />
