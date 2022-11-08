@@ -32,6 +32,9 @@ skinparam linetype ortho
 - Conditional - Activity Diagram <br /><br />
 ![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/1-conditional.png) <br />
 
+- Relationships - Class Diagram <br /><br />
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/2-relations-class.png) <br />
+
 - Component diagram <br />
 < in progress ><br />
 
