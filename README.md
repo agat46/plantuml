@@ -12,7 +12,7 @@ To invoke a local theme, you have to use the following directive:
 
 2. Use the themes from a URL. Plantuml allows you to include files on the internet with this syntax:
 ```
-!include https://raw.githubusercontent.com/agat46/plantuml/main/d-theme.puml
+!include https://raw.githubusercontent.com/agat46/plantuml/main/themes/d-theme.puml
 ```
 
 ## Tips
