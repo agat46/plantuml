@@ -1,19 +1,13 @@
 @startuml
-!theme d-theme.puml from https://raw.githubusercontent.com/agat46/plantuml/main/
-'!theme amiga from https://raw.githubusercontent.com/plantuml/plantuml/master/themes
 
-title While Loop - Activity Diagram
-
+!theme d-white from /themes
 
 start
 
-while (Hungry?)  is (Yes)
+repeat
   :Eat Hot Wings;
   :Drink Homebrew;
-endwhile (No)
-
-:Go To Sleep;
+repeat while (Still Hungry?)
 
 stop
-
 @enduml
