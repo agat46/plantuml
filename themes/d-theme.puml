@@ -1,0 +1,499 @@
+''
+'' Custom Deloitte theme white for internal use
+''
+'' Author: Agata Czarnecka
+
+!$THEME = "Deloitte custom white"
+
+!if %not(%variable_exists("$BGCOLOR"))
+!$BGCOLOR = "transparent"
+!endif
+
+skinparam backgroundColor $BGCOLOR
+skinparam useBetaStyle false
+
+''primary patelle
+!$WHITE = "#ffffff"
+!$BLACK = "#000000"
+!$PRIMARY = "#86BC25"
+!$GREEN4 = "#43B02A"
+!$GREEN_ACCESSIBLE = "#26890D"
+!$GREEN6 = "#046A38"
+!$TEAL_ACCESSIBLE = "#0D8390"
+!$BLUE_ACCESSIBLE = "#007CB0"
+
+''secondary patelle
+!$GREEN1 = "#E3E48D"
+!$GREEN2 = "#C4D600"
+!$GREEN5 = "#009A44"
+!$GREEN7 = "#2C5234"
+!$BLUE1 = "#A0DCFF"
+!$BLUE2 = "#62B5E5"
+!$BLUE3 = "#00A3E0"
+!$BLUE4 = "#0076A8"
+!$BLUE5 = "#005587"
+!$BLUE6 = "#012169"
+!$BLUE7 = "#041E42"
+!$TEAL1 = "#DDEFE8"
+!$TEAL2 = "#9DD4CF"
+!$TEAL3 = "#6FC2B4"
+!$TEAL4 = "#00ABAB"
+!$TEAL5 = "#0097A9"
+!$TEAL6 = "#007680"
+!$TEAL7 = "#004F59"
+
+''gray patelle
+!$GRAY2 = "#D0D0CE"
+!$GRAY4 = "#BBBCBC"
+!$GRAY6 = "#A7A8AA"
+!$GRAY7 = "#97999B"
+!$GRAY9 = "#75787B"
+!$GRAY10 = "#63666A"
+!$GRAY11 = "#53565A"
+
+''limited bright patelle
+!$BRIGHT1 = "#0df200"
+!$BRIGHT2 = "#3efac5"
+!$BRIGHT3 = "#33f0ff"
+
+''limited functional patelle
+!$FUNCTIONAL1 = "#DA291C"
+!$FUNCTIONAL2 = "#ED8B00"
+!$FUNCTIONAL3 = "#FFCD00"
+
+
+!procedure $success($msg)
+  <font color=$BRIGHT1><b>$msg
+!endprocedure
+
+!procedure $failure($msg)
+  <font color=$FUNCTIONAL1><b>$msg
+!endprocedure
+
+!procedure $warning($msg)
+  <font color=$FUNCTIONAL2><b>$msg
+!endprocedure
+
+!procedure $primary_scheme()
+	FontColor $BLACK
+	BorderColor $BLACK
+	BackgroundColor $WHITE
+!endprocedure
+
+!_POST = "<color #007a3e>POST</color>"
+!_PUT = "<color #ea7400>PUT</color>"
+!_DELETE = "<color #cf2a2a>DELETE</color>"
+!_GET = "<color #009fdb>GET</color>"
+!_PATCH = "<color #b5bd00>PATCH</color>"
+!_HEAD = "<color #9012fe>HEAD</color>"
+
+' for status codes
+!procedure $OK($x)
+  <color $BRIGHT1>$x</color>
+!endprocedure
+!procedure $ERROR($x)
+  <color $FUNCTIONAL1>$x</color>
+!endprocedure
+!procedure $COND($x)
+  <color $FUNCTIONAL2>x</color>
+!endprocedure
+
+' For marking parameters as optionally or required
+!procedure $REDSTAR()
+  <color red>*</color>
+!endprocedure
+!procedure $REQ($x)
+  <b>x</b>
+!endprocedure
+!procedure $OPT($x)
+  <color #555>x</color>
+!endprocedure
+''
+'' Global Default Values
+''
+skinparam defaultFontName       "Open Sans"
+skinparam defaultFontSize       11
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            $GRAY9
+skinparam stereotype {
+    CBackgroundColor $SECONDARY_LIGHT
+    CBorderColor $SECONDARY_DARK
+    ABackgroundColor $SUCCESS_LIGHT
+    ABorderColor $SUCCESS_DARK
+    IBackgroundColor $DANGER_LIGHT
+    IBorderColor $DANGER_DARK
+    EBackgroundColor $WARNING_LIGHT
+    EBorderColor $WARNING_DARK
+    NBackgroundColor $INFO_LIGHT
+    NBorderColor $INFO_DARK
+}
+skinparam header {
+	HorizontalAlignment 		 center
+	FontColor	                 $PRIMARY
+	FontSize	    	         12
+	Padding	    	         	 10
+	FontStyle 			 bold
+}
+skinparam title {
+	HorizontalAlignment 		 center
+	FontColor	                 $BLACK
+	BorderColor	                 $GRAY7
+	FontSize	    	         16
+	BorderRoundCorner            	 8
+	BorderThickness 	         0.5
+	BackgroundColor             	 $WHITE
+}
+skinparam legend {
+	BackgroundColor $SECONDARY
+	BorderColor $SECONDARY_DARK
+	FontColor $LIGHT
+}
+
+'' color to use as background in every second field: #DDEFE8 (in theme definied as $TEAL1)
+!startsub swimlane
+skinparam swimlane {
+	BorderColor $TEAL1
+	BorderThickness 1
+	TitleBackgroundColor  $WHITE
+	TitleFontColor $GRAY10
+}
+!endsub
+
+!startsub activity
+skinparam activity {
+	$primary_scheme()
+	BarColor $GREEN_ACCESSIBLE
+	StartColor $GREEN_ACCESSIBLE
+	EndColor $GREEN_ACCESSIBLE
+	''
+	DiamondBackgroundColor $TEAL1
+  	DiamondBorderColor $TEAL1
+  	DiamondFontColor $BLACK
+	DiamondFontSize 12
+}
+!endsub
+
+!startsub participant
+skinparam participant {
+	$primary_scheme()
+	BorderColor $GRAY7
+	BorderThickness 0.5
+}
+!endsub
+
+!startsub actor
+skinparam actor {
+	$primary_scheme()
+}
+!endsub
+
+!startsub arrow
+skinparam arrow {
+	Thickness 0.5
+	Color $GREEN4
+	FontColor $GRAY10
+	FontSize 12
+}
+!endsub
+
+!startsub sequence
+skinparam sequence {
+	ArrowThickness 1
+	BorderColor $GRAY7
+	' For some reason sequence title font color does not pick up from global
+	TitleFontColor $PRIMARY
+	BackgroundColor $WHITE
+	StartColor $PRIMARY
+	EndColor $PRIMARY
+	''
+	BoxBackgroundColor $BGCOLOR
+	BoxBorderColor $GRAY10
+	BoxFontColor $GRAY10
+	''
+	DelayFontColor $GRAY10
+	''
+	LifeLineBorderColor $GRAY3
+	LifeLineBorderThickness 1
+	LifeLineBackgroundColor $GRAY3
+	''
+	GroupBorderColor $GRAY10
+	GroupFontColor $GRAY10
+	GroupHeaderFontColor $FUNCTIONAL1
+	GroupBackgroundColor $FUNCTIONAL2
+	GroupBodyBackgroundColor $BRIGHT1
+	GroupHeaderBackgroundColor $BGCOLOR
+	''
+	DividerBackgroundColor $GRAY10
+    DividerBorderColor $GRAY10
+    DividerBorderThickness 2
+    DividerFontColor $TEAL1
+	''
+	ReferenceBackgroundColor $BGCOLOR
+	ReferenceBorderColor $GRAY10
+	ReferenceFontColor $GRAY10
+	ReferenceHeaderFontColor $FUNCTIONAL13
+	ReferenceHeaderBackgroundColor $FUNCTIONAL1
+	''
+	StereotypeFontColor $BLACK
+}
+!endsub
+
+!startsub partition
+skinparam partition {
+	BorderColor $PRIMARY
+	FontColor $PRIMARY
+	BackgroundColor $BGCOLOR
+}
+!endsub
+
+!startsub collections
+skinparam collections {
+	$primary_scheme()
+}
+!endsub
+
+!startsub control
+skinparam control {
+	$primary_scheme()
+}
+!endsub
+
+!startsub entity
+skinparam entity {
+	$primary_scheme()
+}
+!endsub
+
+!startsub boundary
+skinparam boundary {
+	$primary_scheme()
+}
+!endsub
+
+!startsub agent
+skinparam agent {
+	BackgroundColor $WHITE
+	BorderColor $GREEN4
+	FontColor $GREEN4
+	FontStyle bold
+}
+!endsub
+
+!startsub note
+skinparam note {
+	BorderThickness 1
+	BackgroundColor $INFO
+	BorderColor $INFO_DARK
+	FontColor $WHITE
+}
+!endsub
+
+!startsub artifact
+skinparam artifact {
+	BackgroundColor $WHITE
+	BorderColor $GREEN4
+	FontColor $GREEN4
+	FontStyle bold
+}
+!endsub
+
+!startsub component
+skinparam component {
+	$primary_scheme()
+}
+!endsub
+
+!startsub interface
+skinparam interface {
+	BackgroundColor  $PRIMARY
+	BorderColor  $PRIMARY
+	FontColor $BLACK
+}
+!endsub
+
+!startsub storage
+skinparam storage {
+	$primary_scheme()
+}
+!endsub
+
+!startsub node
+skinparam node {
+	$primary_scheme()
+}
+!endsub
+
+!startsub cloud
+skinparam cloud {
+	BackgroundColor #WHITE
+	BorderColor $GRAY10
+	FontColor $BLACK
+}
+!endsub
+
+!startsub database
+skinparam database {
+	$primary_scheme()
+}
+!endsub
+
+!startsub class
+skinparam class {
+	$primary_scheme()
+	HeaderBackgroundColor $PRIMARY_LIGHT
+	StereotypeFontColor $DARK
+	BorderThickness 1
+	AttributeFontColor $PRIMARY_TEXT
+	AttributeFontSize 11
+}
+!endsub
+
+!startsub object
+skinparam object {
+	$primary_scheme()
+	StereotypeFontColor $DARK
+	BorderThickness 1
+	AttributeFontColor $SECONDARY_TEXT
+	AttributeFontSize 11
+}
+!endsub
+
+!startsub usecase
+skinparam usecase {
+	$primary_scheme()
+	BorderThickness 2
+	StereotypeFontColor $PRIMARY
+}
+!endsub
+
+!startsub rectangle
+skinparam rectangle {
+	BorderColor $PRIMARY
+	FontColor $BLACK
+	BackgroundColor $BGCOLOR
+	BorderThickness 1
+	StereotypeFontColor $GRAY7
+}
+!endsub
+
+!startsub circle
+skinparam circle {
+	$primary_scheme()
+}
+!endsub
+
+!startsub package
+skinparam package {
+	BackgroundColor $GRAY1
+  	BorderColor $PRIMARY
+	FontColor $BLACK
+	BorderThickness 1
+}
+!endsub
+
+!startsub folder
+skinparam folder {
+	$primary_scheme()
+}
+!endsub
+
+!startsub frame
+skinparam frame {
+	$primary_scheme()
+}
+!endsub
+
+!startsub state
+skinparam state {
+	$primary_scheme()
+	StartColor $INFO
+	EndColor $INFO
+	AttributeFontColor $SECONDARY_TEXT
+	AttributeFontSize 11
+}
+!endsub
+
+!startsub queue
+skinparam queue {
+	$primary_scheme()
+}
+!endsub
+
+!startsub card
+skinparam card {
+	BackgroundColor $WHITE
+	BorderColor $GREEN4
+	FontColor $GREEN4
+	FontStyle bold
+}
+!endsub
+
+!startsub file
+skinparam file {
+	$primary_scheme()
+}
+!endsub
+
+!startsub stack
+skinparam stack {
+	$primary_scheme()
+}
+!endsub
+
+!startsub class
+skinparam class {
+FontSize 12
+ArrowColor #GRAY7
+BorderColor #GRAY11
+FontColor #BLACK
+}
+!endsub
+
+!startsub caption
+skinparam caption {
+	$primary_scheme()
+	HorizontalAlignment center
+  	FontSize 14
+  	Padding 15
+}
+!endsub
+
+!startsub footer
+skinparam footer {
+	HorizontalAlignment center
+  	FontSize 9
+	FontColor $GRAY10
+}
+!endsub
+
+
+' <style> 
+' mindmapDiagram {
+' 	Padding 6
+' 	Margin 10
+' 	FontSize 12
+' 	FontName Verdana
+' 	Shadowing 0.0
+' 	FontStyle bold
+' 	LineThickness 1.5
+' 	FontColor $PRIMARY_TEXT
+' 	LineColor  $SECONDARY_DARK
+' 	node {
+' 		LineColor $PRIMARY
+' 		RoundCorner 20
+' 		$primary_scheme()
+' 	}
+' 	arrow {
+' 		LineThickness 2.5
+' 		LineColor $SECONDARY
+' 	}
+' }
+' </style>
+header Cloud & Engineering Team | Cloud Integration
+caption Prepared by <img:https://raw.githubusercontent.com/agat46/plantuml/main/graphics/logo-Deloitte.png{scale=0.3}>
+footer All rights reserved
