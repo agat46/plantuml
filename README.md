@@ -34,11 +34,19 @@ ______________________________________________________
 - Relationships - Class Diagram <br /><br />
 ![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/2-relations-class.png) <br />
 
-- Component diagram <br />
-< in progress ><br />
+- Activity - Parallel Diagram <br /><br />
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/3-parallel-activity.png) <br />
 
-- Deployment Architecture <br />
-< in progress ><br />
+- Packages - Class Diagram <br /><br />
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/4-class-packages.png) <br />
+
+- Packages - Component Diagram <br /><br />
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/5-components-packages.png) <br />
+
+- Mixed - Deployment Diagram <br /><br />
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/6-deployment-mixed.png) <br />
+
+
 
 
 - Data Model <br />

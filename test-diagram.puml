@@ -2,12 +2,18 @@
 
 !theme d-white from /themes
 
-start
+rectangle "Concept Model" <<Concept>> {
+    rectangle "Example 1" <<Concept>> as ex1
+    actor John
+    frame Nested {
+        cloud Web
+        rectangle "Another One"
+    }
+    card Card {
+     package System
+    }
+}
+database Database
+queue Queue
 
-repeat
-  :Eat Hot Wings;
-  :Drink Homebrew;
-repeat while (Still Hungry?)
-
-stop
 @enduml

@@ -315,18 +315,6 @@ skinparam interface {
 }
 !endsub
 
-!startsub storage
-skinparam storage {
-	$primary_scheme()
-}
-!endsub
-
-!startsub node
-skinparam node {
-	$primary_scheme()
-}
-!endsub
-
 !startsub cloud
 skinparam cloud {
 	BackgroundColor #WHITE
@@ -388,22 +376,10 @@ skinparam circle {
 
 !startsub package
 skinparam package {
-	BackgroundColor $GRAY1
   	BorderColor $PRIMARY
 	FontColor $BLACK
 	BorderThickness 1
-}
-!endsub
-
-!startsub folder
-skinparam folder {
-	$primary_scheme()
-}
-!endsub
-
-!startsub frame
-skinparam frame {
-	$primary_scheme()
+	BackgroundColor $BGCOLOR
 }
 !endsub
 
@@ -423,14 +399,6 @@ skinparam queue {
 }
 !endsub
 
-!startsub card
-skinparam card {
-	BackgroundColor $WHITE
-	BorderColor $GREEN4
-	FontColor $GREEN4
-	FontStyle bold
-}
-!endsub
 
 !startsub file
 skinparam file {
@@ -441,15 +409,6 @@ skinparam file {
 !startsub stack
 skinparam stack {
 	$primary_scheme()
-}
-!endsub
-
-!startsub class
-skinparam class {
-	FontSize 12
-	ArrowColor $GRAY10
-	BorderColor $GRAY10
-	FontColor $BLACK
 }
 !endsub
 
