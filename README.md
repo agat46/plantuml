@@ -14,7 +14,7 @@ To invoke a local theme, you have to use the following directive:
 !include https://raw.githubusercontent.com/agat46/plantuml/main/themes/puml-theme-d-white.puml
 ```
 
-1. Every diagram contains the header, caption and footer like below:<br /><br />
+3. Every diagram contains the header, caption and footer like below:<br /><br />
 
 
 ![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/graphics/example.png)<br />
@@ -29,7 +29,6 @@ header ""
 caption Some caption
 footer Some footer
 ```
-<br />
 ![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/graphics/example2.png)<br />
 
 ## Tips
