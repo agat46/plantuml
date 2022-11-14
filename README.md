@@ -14,6 +14,24 @@ To invoke a local theme, you have to use the following directive:
 !include https://raw.githubusercontent.com/agat46/plantuml/main/themes/puml-theme-d-white.puml
 ```
 
+1. Every diagram contains the header, caption and footer like below:<br /><br />
+
+
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/graphics/example.png)<br />
+
+To change this you can write in your diagram whatever you want or write empty ""
+
+```
+header ""
+
+(Some text in this place)
+
+caption Some caption
+footer Some footer
+```
+<br />
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/graphics/example2.png)<br />
+
 ## Tips
 - links to generate diagrams online <br />
 https://www.planttext.com/<br />http://www.plantuml.com/plantuml/uml<br /><br />
@@ -21,11 +39,6 @@ https://www.planttext.com/<br />http://www.plantuml.com/plantuml/uml<br /><br />
 ```
 skinparam linetype ortho
 ```
-- every diagram contains the header, caption and footer like below:<br /><br />
-______________________________________________________
-![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/graphics/example.png)<br />
-______________________________________________________
-
 
 ## Examples of diagrams
 - Conditional - Activity Diagram <br /><br />
@@ -46,11 +59,14 @@ ______________________________________________________
 - Mixed - Deployment Diagram <br /><br />
 ![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/6-deployment-mixed.png) <br />
 
+- Mindmap Diagram <br /><br />
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/7-mindmap.png) <br />
 
+- Sequence Diagram <br /><br />
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/8-sequence.png) <br />
 
+- State Diagram <br /><br />
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/9-state.png) <br />
 
-- Data Model <br />
-< in progress ><br />
-
-<br />
-![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/Picture2.png) <br />
+- Use Case Diagram <br /><br />
+![alt text](https://raw.githubusercontent.com/agat46/plantuml/main/examples/10-usecase.png) <br />

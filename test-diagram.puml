@@ -2,18 +2,18 @@
 
 !theme d-white from /themes
 
-rectangle "Concept Model" <<Concept>> {
-    rectangle "Example 1" <<Concept>> as ex1
-    actor John
-    frame Nested {
-        cloud Web
-        rectangle "Another One"
-    }
-    card Card {
-     package System
-    }
-}
-database Database
-queue Queue
+title While Loop - Activity Diagram 
+
+
+start
+
+while (Hungry?)  is (Yes)
+  :Eat Hot Wings;
+  :Drink Homebrew;
+endwhile (No)
+
+:Go To Sleep;
+
+stop
 
 @enduml
