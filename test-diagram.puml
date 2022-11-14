@@ -1,6 +1,6 @@
 @startuml
 
-!theme d-white from /themes
+!theme d-black from /themes
 
 title While Loop - Activity Diagram 
 
