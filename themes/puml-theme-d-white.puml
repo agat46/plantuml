@@ -6,7 +6,7 @@
 !$THEME = "Deloitte custom white"
 
 !if %not(%variable_exists("$BGCOLOR"))
-!$BGCOLOR = "transparent"
+!$BGCOLOR = "#ffffff"
 !endif
 
 skinparam backgroundColor $BGCOLOR
