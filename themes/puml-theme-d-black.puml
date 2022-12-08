@@ -6,7 +6,7 @@
 !$THEME = "Deloitte custom black"
 
 !if %not(%variable_exists("$BGCOLOR"))
-!$BGCOLOR = "transparent"
+!$BGCOLOR = "#000000"
 !endif
 
 ' !!! bakcground color need to be replace as $BGCOLOR on prod
